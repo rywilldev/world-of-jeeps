@@ -1,3 +1,5 @@
+/* CSS RESET */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,4 +42,70 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* COLOR PALETTE AND TYPOGRAPHY 
+https://hexcolorpedia.com/665626_a7921f_6e7a31_8b8130_506224/ 
+*/
+body {
+    background-color: #6e7a31;
+}
+
+
+
+
+
+
+
+
+/* NAVIGATION BAR */
+.nav {
+    background-color: #506224;
+    overflow: hidden;
+}
+
+.nav a {
+    float: right;
+    display: block;
+    color: #a7921f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #8b8130;
+    color: black;
+}
+
+.nav a.active {
+    background-color: #3c4b1b;
+    color: #a7921f;
+}
+
+.nav .icon {
+    display: none;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+    .nav.responsive {
+        position: relative;
+    }
+    
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
