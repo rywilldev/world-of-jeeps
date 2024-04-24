@@ -65,6 +65,15 @@ body {
     overflow: hidden;
 }
 
+#nav-logo {
+    float: left;
+    clear: both;
+    vertical-align: middle;
+    padding: 14px 16px;
+    color: #a7921f;
+    font-size: 20px;
+}
+
 .nav a {
     float: right;
     display: block;
